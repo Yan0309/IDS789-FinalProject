@@ -28,6 +28,8 @@ htmlcov/
 /data/modeling/
 /data/.modeling-stage-*/
 /data/data_files.zip
+/models/
+/reports/
 
 # Local credentials and environment configuration
 .env

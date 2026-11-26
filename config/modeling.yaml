@@ -1,0 +1,41 @@
+seed: 42
+n_jobs: 8
+onehot_min_frequency: 20
+source_archive: "~/Downloads/data_files.zip"
+
+logistic:
+  max_iter: 500
+  c: 1.0
+
+xgboost:
+  n_estimators: 350
+  learning_rate: 0.04
+  max_depth: 4
+  min_child_weight: 20
+  subsample: 0.85
+  colsample_bytree: 0.85
+  reg_lambda: 2.0
+  max_bin: 256
+  early_stopping_rounds: 35
+
+calibration:
+  holdout_fraction: 0.30
+
+lgd:
+  ridge_alpha: 10.0
+
+ecl:
+  portfolio_period: "2023-06-01"
+  pd_model: xgboost
+  scenarios:
+    baseline:
+      pd_multiplier: 1.0
+      recovery_haircut: 0.0
+    adverse:
+      pd_multiplier: 1.5
+      recovery_haircut: 0.10
+    severe:
+      pd_multiplier: 2.5
+      recovery_haircut: 0.20
+  sensitivity_pd_multipliers: [1.0, 1.25, 1.5, 2.0, 2.5, 3.0]
+  sensitivity_recovery_haircuts: [0.0, 0.10, 0.20, 0.30]

@@ -1,6 +1,6 @@
 # From Probability of Default to Expected Credit Loss
 
-Start with [`notebooks/02_modeling_data_handoff.ipynb`](notebooks/02_modeling_data_handoff.ipynb). It inspects the complete selected vintages and demonstrates loading predictors, labels, chronological partitions and separate loss outcomes. No model has been trained; the teammate can begin logistic regression, boosted trees and probability calibration from these tables.
+Start with [`notebooks/02_modeling_data_handoff.ipynb`](notebooks/02_modeling_data_handoff.ipynb). It inspects the complete selected vintages and demonstrates loading predictors, labels, chronological partitions and separate loss outcomes. The repository now also contains a reproducible PD, LGD, ECL and stress-testing layer in `src/credit_model.py`.
 
 ## Data and scope
 
@@ -31,6 +31,43 @@ python3 -m venv .venv
 ```
 
 Python 3.12 was used. On the current machine the existing environment is one folder above the repository: `../.venv/bin/python`.
+
+The portable handoff in `~/Downloads/data_files.zip` has been extracted into
+`data/modeling/` and the processed summary files. Run the complete modeling
+pipeline from the repository root:
+
+```bash
+.venv/bin/python -m src.credit_model all --force
+.venv/bin/python -m pytest -q
+```
+
+The command audits the source sample, trains logistic and XGBoost PD models,
+fits calibration only on the calibration partition, fits LGD only on development
+resolutions, evaluates the 2023 test set, and writes:
+
+| Output | Contents |
+|---|---|
+| `reports/tables/pd_metrics.csv` | Raw and calibrated AUC, KS, Brier, log loss and calibration ratios |
+| `reports/tables/stress_scenarios.csv` | Baseline, adverse and severe ECL |
+| `reports/tables/sensitivity_grid_bps.csv` | PD multiplier and recovery haircut grid |
+| `reports/tables/modeling_report.md` | Concise results and limitations |
+| `reports/figures/` | Default rate, calibration, ECL bands, scenario and sensitivity figures |
+| `models/pd/`, `models/lgd/` | Frozen estimators used for the test and ECL calculations |
+
+Current 2023 out-of-time results use XGBoost as the selected ECL PD model:
+
+| Metric | XGBoost | Logistic |
+|---|---:|---:|
+| AUC | 0.722 | 0.723 |
+| KS | 0.333 | 0.321 |
+| Brier | 0.00672 | 0.00670 |
+| Mean PD / observed rate | 1.91x | 2.74x |
+
+The 2023 event rate is 0.637%; calibrated XGBoost mean PD is 1.219%. The
+material overprediction and negative static current-LTV LGD coefficient are
+reported explicitly rather than hidden. At the 2023-06 portfolio date, the
+selected baseline 12-month ECL rate is 0.351% of UPB, rising to 0.628% under the
+adverse assumption and 1.212% under the severe assumption.
 
 For model development, transfer the repository and **`data/modeling/`**, retaining their relative paths. The data are excluded from Git, so cloning the code alone does not include the training tables. The full `data/processed/full_population/` directory is needed to run every inspection cell or study monthly histories. Add `data/raw_full/` for complete reproduction. Source documentation and integrity manifests are in `data/reference/`. Follow Freddie Mac's access and usage terms when arranging access for collaborators; no upload or external sharing has been performed here.
 
