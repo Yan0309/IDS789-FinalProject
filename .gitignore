@@ -27,6 +27,7 @@ htmlcov/
 !/data/processed/.gitkeep
 /data/modeling/
 /data/.modeling-stage-*/
+/data/data_files.zip
 
 # Local credentials and environment configuration
 .env
