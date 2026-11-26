@@ -1,0 +1,63 @@
+{
+  "from_code_sha256": "2d6f1b0c1083aac16a39324f20088b0a3c478dca2c4f6db70be15ad957ddae3a",
+  "to_code_sha256": "5f29e237909cf82e7824a88002120586865eb1a4bdaac01ee652626a310372ab",
+  "reason": "Preserve and report one official 2008Q4 loan with a 2009Q1 identifier, rather than rejecting the entire quarter. Also tolerate concurrent scratch removal in storage counting and suppress SQL progress bars. No field parsing/cleaning changes.",
+  "prior_completed_quarters": [
+    {
+      "cohort": "2008Q1",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2008Q2",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2008Q3",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2018Q1",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2018Q2",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2018Q3",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2018Q4",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2023Q1",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2023Q2",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2023Q3",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    },
+    {
+      "cohort": "2023Q4",
+      "origination_identifier_cohort_mismatch_rows": 0,
+      "performance_identifier_cohort_mismatch_rows": 0
+    }
+  ],
+  "validated_utc": "2026-11-23T01:58:55.594962+00:00"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "sample_2006.zip",
+    "bytes": 47914434,
+    "sha256": "5a704b2ba4b8bfe4571331dccf6ed6cdd4b1e4181ede434932e2769518abee1a",
+    "source": "https://claritydownload.fmapps.freddiemac.com/CRT/#/sflld",
+    "release": "R48-S",
+    "downloaded_date": "2026-11-22"
+  },
+  {
+    "filename": "sample_2007.zip",
+    "bytes": 45825700,
+    "sha256": "7704cd03e7ddc2a373fd34fea0f0286d80863db19c7d4d9e6d32e5e0e03736b3",
+    "source": "https://claritydownload.fmapps.freddiemac.com/CRT/#/sflld",
+    "release": "R48-S",
+    "downloaded_date": "2026-11-22"
+  },
+  {
+    "filename": "sample_2008.zip",
+    "bytes": 36923529,
+    "sha256": "e279a97b0f899b5736a1a657b8137afb0aa1c22fc3208a606459f6db7e77d4f7",
+    "source": "https://claritydownload.fmapps.freddiemac.com/CRT/#/sflld",
+    "release": "R48-S",
+    "downloaded_date": "2026-11-22"
+  },
+  {
+    "filename": "sample_2018.zip",
+    "bytes": 34427349,
+    "sha256": "436616d0e628b85572fbaba144b2ce2c26e92cee6940116f9ebaf1e611aeb284",
+    "source": "https://claritydownload.fmapps.freddiemac.com/CRT/#/sflld",
+    "release": "R48-S",
+    "downloaded_date": "2026-11-22"
+  },
+  {
+    "filename": "sample_2019.zip",
+    "bytes": 33101938,
+    "sha256": "e943fe71352c414a3efd8b039a78689af0ffd422ab7a8e23423f5957918b9707",
+    "source": "https://claritydownload.fmapps.freddiemac.com/CRT/#/sflld",
+    "release": "R48-S",
+    "downloaded_date": "2026-11-22"
+  }
+]

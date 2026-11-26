@@ -1,0 +1,30 @@
+[
+  {
+    "file": "user_guide.pdf",
+    "url": "https://www.freddiemac.com/fmac-resources/research/pdf/user_guide.pdf",
+    "retrieved_date": "2026-11-22",
+    "bytes": 409857,
+    "sha256": "0884a958ebfd58afe18bb2f856bb43e886685cad6b554f04dc5f18a53faebfd0"
+  },
+  {
+    "file": "file_layout_july_2026.xlsx",
+    "url": "https://www.freddiemac.com/fmac-resources/research/pdf/file_layout_july_2026.xlsx",
+    "retrieved_date": "2026-11-22",
+    "bytes": 13753,
+    "sha256": "e4ee4ba00b5b1a8d18e2debe3acafdd019b48bafafdeb907cf5b19b49c989f23"
+  },
+  {
+    "file": "file_headers_july_2026.zip",
+    "url": "https://www.freddiemac.com/fmac-resources/research/docs/file_headers_july_2026.zip",
+    "retrieved_date": "2026-11-22",
+    "bytes": 1217,
+    "sha256": "db1390531ca9ea9ce11de2b2e1f42114dba5461d7e10a0eb508a4f464ff9e25a"
+  },
+  {
+    "file": "release_notes.pdf",
+    "url": "https://www.freddiemac.com/fmac-resources/research/pdf/release_notes.pdf",
+    "retrieved_date": "2026-11-22",
+    "bytes": 664895,
+    "sha256": "8c5382463d67e36be17221c35697942c75a9457742eb6790117583e7fbbf019b"
+  }
+]

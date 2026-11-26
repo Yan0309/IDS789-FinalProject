@@ -1,0 +1,29 @@
+[
+  {
+    "year": 2008,
+    "file": "data/raw_full/historical_data_2008.zip",
+    "bytes": 920354384,
+    "sha256": "ebb1ad0c5bdec3eea37a14cc4de7e95e87fbddf21faf80298b350c4e65adab84",
+    "release": "R48-S",
+    "downloaded_date": "2026-11-22",
+    "source": "https://claritydownload.fmapps.freddiemac.com/CRT/#/sflld"
+  },
+  {
+    "year": 2018,
+    "file": "data/raw_full/historical_data_2018.zip",
+    "bytes": 855044684,
+    "sha256": "072c5a8982f5dbeaa1c42cdf451025b9e342a05c436a1600603c4c4fb838568a",
+    "release": "R48-S",
+    "downloaded_date": "2026-11-22",
+    "source": "https://claritydownload.fmapps.freddiemac.com/CRT/#/sflld"
+  },
+  {
+    "year": 2023,
+    "file": "data/raw_full/historical_data_2023.zip",
+    "bytes": 447361578,
+    "sha256": "7a50c01f845f3d0b8726333a8be0b01883751ab67afccdd483d337dbc91ce5ec",
+    "release": "R48-S",
+    "downloaded_date": "2026-11-22",
+    "source": "https://claritydownload.fmapps.freddiemac.com/CRT/#/sflld"
+  }
+]
